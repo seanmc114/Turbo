@@ -1,0 +1,27 @@
+body {
+    font-size: 24px;
+}
+.phrase {
+    margin-bottom: 15px;
+}
+label, input {
+    display: block;
+    margin-bottom: 10px;
+}
+button {
+    font-size: 24px;
+    padding: 10px 20px;
+}
+.score {
+    font-size: 36px;
+    font-weight: bold;
+}
+.incorrect {
+    color: red;
+}
+a {
+    font-size: 24px;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+}
