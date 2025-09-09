@@ -1,22 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Spanish Phrase Game</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Turbo</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main>
-    <h1>Spanish Phrase Game</h1>
+  <div class="container">
 
-    <form id="translationForm">
-      <input type="hidden" id="start_time" name="start_time" value="" />
-      <div id="phrases"></div>
-      <button type="submit">Submit</button>
-    </form>
-  </main>
+    <h1><span class="turbo">TURBO</span></h1>
 
+    <!-- Tense Buttons -->
+    <div id="tense-buttons" style="margin-bottom: 20px;">
+      <button class="tense-button active" data-tense="Present">Present</button>
+      <button class="tense-button" data-tense="Past">Past</button>
+      <button class="tense-button" data-tense="Future">Future</button>
+    </div>
+
+    <!-- Level Selection Section -->
+    <div id="level-list"></div>
+
+    <!-- Game Section -->
+    <div id="game" style="display: none;">
+      <div id="timer">Time: 0s</div>
+      <div id="questions"></div>
+      <button id="submit">Check Answers</button>
+      <div id="results"></div>
+    </div>
+
+  </div>
+
+  <!-- script always at the end -->
   <script src="script.js"></script>
 </body>
 </html>
